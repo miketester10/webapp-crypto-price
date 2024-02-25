@@ -79,6 +79,11 @@ app.get('/api/v1/ticker/:ticker', async (req, res) => {
   }
 });
 
+// Route per qualsiasi altre richieste diverse da /api/v1/ticker/:ticker
+app.get('*', (req, res) => {
+  res.status(404).json({ errore: 'Pagina non trovata' });
+});
+
 // Avvia il server
 app.listen(PORT, () => {
   console.log(`Il server è in ascolto sulla porta ${PORT}`);
