@@ -25,7 +25,7 @@ function controlla_simbolo() {
 }
 
 async function chiamata_api(symbol) {
-    return fetch(`https://server-415302.oa.r.appspot.com/api/v1/ticker/${symbol}`)
+    return fetch(`https://server-415418.oa.r.appspot.com/api/v1/ticker/${symbol}`)
     // return fetch(`http://localhost:8080/api/v1/ticker/${symbol}`) // per test in locale
     .then(response => {if (!response.ok) { throw new Error(response.statusText) } else { return response.json() } })
     .then(data => { // data sarebbe un oggetto ovvero response.json
