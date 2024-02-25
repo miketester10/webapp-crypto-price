@@ -1,0 +1,134 @@
+body {
+    display: flex;
+    justify-content: center; /* Centra orizzontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 90vh; /* Altezza uguale all'altezza della finestra del browser */
+}
+
+.container {
+    padding-right: 25%;
+    padding-left: 25%;
+    max-width: 200%;  
+}
+
+@media (max-width: 800px) {
+    .container {
+
+        max-width: 200%;
+    }
+    h2 {
+        font-size: 24px;
+    }
+}
+
+.btn-outline-secondary {
+    --bs-btn-color: #6c757d;
+    --bs-btn-border-color: #6a6a6a8c;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #7bc5e7;
+    --bs-btn-hover-border-color: #6c757d;
+    --bs-btn-focus-shadow-rgb: 108,117,125;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #6c757d;
+    --bs-btn-active-border-color: #6c757d;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #6c757d;
+    --bs-btn-bg: #99cbf7;
+    --bs-btn-disabled-border-color: #6c757d;
+    --bs-gradient: none;
+}
+
+body {
+    background-color: rgb(97, 54, 75);
+
+}
+
+.up {
+    color: MediumSeaGreen;
+    
+}
+
+.down {
+    color: red;
+}
+
+#result > div {
+    font-size: 102%;
+    color: rgba(255, 175, 210, 1.00);
+}
+
+h2 {
+    color: rgba(255, 175, 210, 1.00);
+
+}
+
+.no-visible {
+    display: none;
+}
+
+.telegram-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999; /* Assicura che l'icona sia sopra agli altri elementi */
+}
+
+.telegram-icon img {
+    width: 40px; /* Imposta la larghezza dell'icona */
+    height: auto; /* Imposta l'altezza in modo che l'immagine conservi le proporzioni originali */
+}
+
+h2 {
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+@media (max-width: 375px) {
+    .container {
+        padding-right: 5%; /* Riduci il padding sui lati */
+        padding-left: 5%;
+    }
+    h2 {
+        font-size: 20px; /* Riduci la dimensione del titolo */
+    }
+}
+
+
+@media (max-width: 440px) {
+    .container {
+        padding-right: 3%; /* Riduci ulteriormente il padding sui lati */
+        padding-left: 3%;
+    }
+    h2 {
+        font-size: 18px; /* Ulteriore riduzione della dimensione del titolo */
+    }
+}
+
+
+@media (max-width: 830px) {
+    .container {
+        padding-right: 3%; /* Riduci ulteriormente il padding sui lati */
+        padding-left: 3%;
+    }
+    h2 {
+        font-size: 18px; /* Ulteriore riduzione della dimensione del titolo */
+    }
+}
+
+
+@media (max-width: 1030px) {
+    .container {
+        padding-right: 3%; /* Riduci ulteriormente il padding sui lati */
+        padding-left: 3%;
+    }
+    h2 {
+        font-size: 20px; /* Ulteriore riduzione della dimensione del titolo */
+    }
+}
+
+
+
+
+
