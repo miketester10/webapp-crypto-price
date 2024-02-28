@@ -77,6 +77,7 @@ async function chiamata_api(symbol) {
 
 function main() {
    
+    // per l'invio cliccando sul bottone Invia
     invia.addEventListener('click', function() {
 
         symbol_global = input.value.toUpperCase();
@@ -104,6 +105,17 @@ function main() {
             return;
         };
     });
+
+    // per l'invio premendo Enter da tastiera senza cliccare sul bottone
+    input.addEventListener('keyup', function(event) {
+        // console.log(event);
+        if (event.key === 'Enter') {
+            invia.click(input.value);
+            
+        }
+    })
+
+
 };
 
 main();
