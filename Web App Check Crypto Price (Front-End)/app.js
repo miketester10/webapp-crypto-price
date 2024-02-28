@@ -110,12 +110,9 @@ function main() {
     input.addEventListener('keyup', function(event) {
         // console.log(event);
         if (event.key === 'Enter') {
-            invia.click(input.value);
-            
-        }
-    })
-
-
+            invia.click(input.value);          
+        };
+    });
 };
 
 main();
