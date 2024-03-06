@@ -56,7 +56,7 @@ const findTicker = async (ticker) => {
     try {
       const response = await axios.get(url());
       const price = parseFn(response.data) // con Axios response è già in json quindi non c'è bisogno di fare response.json(), ma posso direttamente applicare la mia funzione parseFn per estrarre il prezzo
-      if (price !== undefined) {
+      if (price !== undefined && price != 0) {
         return { symbol, price };
       }
     } catch (error) {
